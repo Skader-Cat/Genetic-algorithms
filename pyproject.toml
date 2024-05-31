@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "heuristic methods"
+name = "genetic alh"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
@@ -11,11 +11,21 @@ seaborn = "^0.13.2"
 numpy = "^1.26.4"
 ipykernel = "^6.29.2"
 pandas = "^2.2.2"
+sympy = "^1.12"
+numba = "^0.59.1"
+numexpr = "^2.10.0"
+cloudpickle = "^3.0.0"
+scipy = "^1.13.0"
+networkx = "^3.3"
 
 
 [tool.poetry.group.dev.dependencies]
 pandas = "^2.2.0"
+ipykernel = "^6.29.4"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.packages]]
+include = "src"
